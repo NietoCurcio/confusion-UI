@@ -15,11 +15,44 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
 
   <body>
-    <header class="p-5 mb-4 rounded-3 jumbotron">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand me-auto">Ristorante Con Fusion</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="mb-4 rounded-3 jumbotron">
       <div class="container">
         <div class="row row-header">
           <div class="col-md-7">
@@ -89,7 +122,9 @@
             <h5>Links</h5>
             <ul class="list-unstyled">
               <li><a class="text-decoration-none" href="#">Home</a></li>
-              <li><a class="text-decoration-none" href="#">About</a></li>
+              <li>
+                <a class="text-decoration-none" href="aboutus.html">About</a>
+              </li>
               <li><a class="text-decoration-none" href="#">Menu</a></li>
               <li><a class="text-decoration-none" href="#">Contact</a></li>
             </ul>

@@ -1,0 +1,41 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer {
+  background: #d1c4e9;
+  margin: 0px auto;
+  padding: 20px 0 20px 0;
+}
+
+.jumbotron {
+  padding: 80px 30px;
+  margin: 0 auto;
+  background: #9575cd;
+  color: floralwhite;
+}
+
+.address {
+  font-size: 80%;
+  margin: 0;
+  color: #0f0f0f;
+}
+
+header {
+  margin-top: 100px;
+}
+
+.navbar-dark {
+  background: $purple-600;
+}

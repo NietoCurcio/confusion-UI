@@ -17,7 +17,7 @@
 }
 
 .jumbotron {
-  padding: 70px 30px;
+  padding: 80px 30px;
   margin: 0 auto;
   background: #9575cd;
   color: floralwhite;
@@ -28,3 +28,13 @@
   margin: 0;
   color: #0f0f0f;
 }
+
+header {
+  margin-top: 100px;
+}
+
+.navbar-dark {
+  background: #59359a;
+}
+
+/*# sourceMappingURL=custom.css.map */
