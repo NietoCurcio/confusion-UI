@@ -34,7 +34,11 @@ header {
 }
 
 .navbar-dark {
-  background: #59359a;
+  background: #6f42c1;
+}
+
+.breadcrumb {
+  padding-left: 0.8rem;
 }
 
 /*# sourceMappingURL=custom.css.map */
