@@ -57,7 +57,7 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"
+              <a href="contactus.html" class="nav-link"
                 ><i class="fa fa-address-card fa-lg"></i> Contact</a
               >
             </li>
@@ -69,7 +69,7 @@
     <header class="mb-4 rounded-3 jumbotron">
       <div class="container">
         <div class="row row-header">
-          <div class="col-md-7">
+          <div class="col-md">
             <h1 class="display-5 fw-bold">Ristorante con Fusion</h1>
             <p class="fs-4">
               We take inspiration from the World's best cuisines, and create a
@@ -77,8 +77,19 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-sm align-self-center">
-            <img src="img/logo.png" class="img-fluid" alt="Ristorante" />
+          <div class="col-md-6 align-self-center">
+            <div class="row align-items-center">
+              <div class="col-sm-6 mb-3">
+                <img src="img/logo.png" class="img-fluid" alt="Ristorante" />
+              </div>
+              <div class="col">
+                <a
+                  class="btn btn-sm btn-warning ps-5 pe-5 fs-5"
+                  href="#reserveTable"
+                  >Reserve Table</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -114,13 +125,23 @@
           <h3>This Month's Promotions</h3>
         </div>
         <div class="col">
-          <h2>Weekend Grand Buffet</h2>
-          <p>
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+          <div class="d-flex">
+            <div class="flex-grow-1 ms-3">
+              <h2>
+                Weekend Grand Buffet
+                <span class="badge bg-danger">NEW</span>
+              </h2>
+              <p>
+                Featuring mouthwatering combinations with a choice of five
+                different salads, six enticing appetizers, six main entrees and
+                five choicest desserts. Free flowing bubbly and soft drinks. All
+                for just $19.99 per person
+              </p>
+            </div>
+            <div class="flex-shrink-0 align-self-center">
+              <img class="img-thumbnail" src="img/buffet.png" alt="Buffet" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -146,6 +167,118 @@
           </div>
         </div>
       </div>
+
+      <section
+        class="row row-content align-items-center justify-content-center"
+      >
+        <div class="col-sm-8">
+          <div class="card text-white mb-3">
+            <h2 class="card-header bg-warning">Reserve a Table</h2>
+            <div class="card-body text-dark">
+              <form id="reserveTable">
+                <div class="row mb-3">
+                  <label for="guestsLabel" class="col-md-2 col-form-label"
+                    >Number of Guests</label
+                  >
+                  <div class="col-md-10">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="guests"
+                        id="guests1"
+                        value="1"
+                      />
+                      <label class="form-check-label" for="guests1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="guests"
+                        id="guests2"
+                        value="2"
+                      />
+                      <label class="form-check-label" for="guests2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="guests"
+                        id="guests3"
+                        value="3"
+                      />
+                      <label class="form-check-label" for="guests3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="guests"
+                        id="guests4"
+                        value="4"
+                      />
+                      <label class="form-check-label" for="guests4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="guests"
+                        id="guests5"
+                        value="5"
+                      />
+                      <label class="form-check-label" for="guests5">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="guests"
+                        id="guests6"
+                        value="6"
+                      />
+                      <label class="form-check-label" for="guests6">6</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="dateAndTime" class="col-md-2 col-form-label"
+                    >Date and Time</label
+                  >
+                  <div class="col-md-8">
+                    <div class="row justify-content-space-between">
+                      <input
+                        type="text"
+                        class="col form-control"
+                        id="date"
+                        name="date"
+                        placeholder="Date"
+                      />
+                      <div class="col-1"></div>
+                      <input
+                        type="text"
+                        class="col form-control"
+                        id="date"
+                        name="date"
+                        placeholder="Time"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row ms-5">
+                  <div class="offset-md-1 col-md-10">
+                    <button type="submit" class="btn btn-primary">
+                      Reserve
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer class="footer">
@@ -159,7 +292,11 @@
                 <a class="text-decoration-none" href="aboutus.html">About</a>
               </li>
               <li><a class="text-decoration-none" href="#">Menu</a></li>
-              <li><a class="text-decoration-none" href="#">Contact</a></li>
+              <li>
+                <a class="text-decoration-none" href="contactus.html"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-7 col-sm-5">
