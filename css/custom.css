@@ -69,4 +69,11 @@ header {
   height: 300px;
 }
 
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
 /*# sourceMappingURL=custom.css.map */

@@ -175,7 +175,29 @@
     <div class="container">
       <div class="row row-content">
         <div class="col">
-          <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <section id="carousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="overlay-custom">
@@ -226,6 +248,38 @@
                   </p>
                 </div>
               </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <i class="fa fa-pause"></i>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carousel-play">
+                <i class="fa fa-play"></i>
+              </button>
             </div>
           </section>
         </div>
@@ -543,5 +597,18 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const myCarousel = document.querySelector('#carousel')
+      console.log(myCarousel)
+      const carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2500,
+        wrap: true,
+        ride: true,
+      })
+      const pause = document.querySelector('#carousel-pause')
+      const cycle = document.querySelector('#carousel-play')
+      pause.onclick = () => carousel.pause()
+      cycle.onclick = () => carousel.cycle()
+    </script>
   </body>
 </html>
