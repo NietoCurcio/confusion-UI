@@ -64,9 +64,8 @@
           </ul>
           <span
             class="navbar-text fs-5 text-white"
+            id="loginToggle"
             type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#loginModal"
           >
             <i class="fas fa-sign-in-alt"></i> Login
           </span>
@@ -83,8 +82,8 @@
     >
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="loginModal">Login</h4>
+          <div class="modal-header bg-purple-dark text-white">
+            <h4 class="modal-title">Login</h4>
             <button
               type="button"
               class="btn-close"
@@ -92,7 +91,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body bg-purple-pale">
             <form>
               <div class="row mb-3">
                 <div class="col-sm-4">
@@ -160,8 +159,7 @@
                 <button
                   type="button"
                   class="btn btn-sm btn-warning ps-5 pe-5 fs-5"
-                  data-bs-toggle="modal"
-                  data-bs-target="#reserveTable"
+                  id="reserveToggle"
                 >
                   Reserve Table
                 </button>
@@ -354,14 +352,14 @@
 
       <section
         class="modal fade"
-        id="reserveTable"
+        id="reserveModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
         <div class="modal-dialog">
-          <div class="modal-content p-3">
-            <div class="modal-header">
+          <div class="modal-content">
+            <div class="modal-header bg-purple-dark p-3 text-white">
               <h2 class="modal-title">Reserve a Table</h2>
               <button
                 type="button"
@@ -370,8 +368,8 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
-              <form id="reserveTable">
+            <div class="modal-body bg-purple-pale p-3 fw-bold">
+              <form>
                 <div class="row mb-3">
                   <label for="guestsLabel" class="col-md-3 col-form-label"
                     >Number of Guests</label
@@ -593,6 +591,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // carousel
       const myCarousel = document.querySelector('#carousel')
       const carousel = new bootstrap.Carousel(myCarousel, {
         interval: 2500,
@@ -612,6 +611,19 @@
           child.classList.add('fa-pause')
         }
       }
+      // modal login
+      const modal = new bootstrap.Modal(document.getElementById('loginModal'), {
+        keyboard: false,
+      })
+      const modalToggle = document.getElementById('loginToggle')
+      modalToggle.onclick = () => modal.toggle()
+
+      // modal reserve
+      const modalReserve = new bootstrap.Modal(
+        document.getElementById('reserveModal')
+      )
+      const modalReserveToggle = document.getElementById('reserveToggle')
+      modalReserveToggle.onclick = () => modalReserve.toggle()
     </script>
   </body>
 </html>
