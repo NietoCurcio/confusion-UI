@@ -50,4 +50,23 @@ header {
   padding: 10px;
 }
 
+.carousel-inner {
+  background: #512da8;
+}
+.carousel-inner .carousel-item p {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.7rem;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
 /*# sourceMappingURL=custom.css.map */
