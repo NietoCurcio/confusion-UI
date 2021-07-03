@@ -10,15 +10,14 @@ $lt-gray: #ddd;
 $background-dark: #512da8;
 $background-light: #9575cd;
 $background-pale: #d1c4e9;
-
 $carousel-item-height: 300px;
 
-$theme-colors: (
-  purple-dark: $background-dark,
+$custom-colors: (
+  'purple-dark': $background-dark,
 );
 
-/* finally, import Bootstrap */
-@import '../node_modules/bootstrap/scss/bootstrap';
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @mixin zero-margin($pad-up-dn: 0px, $pad-right-left: 0) {
   margin: 0 auto;
@@ -90,3 +89,6 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+/* finally, import Bootstrap */
+@import '../node_modules/bootstrap/scss/bootstrap';
