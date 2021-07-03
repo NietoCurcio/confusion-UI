@@ -44,4 +44,10 @@ header {
   padding-left: 0.8rem;
 }
 
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=custom.css.map */
