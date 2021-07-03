@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm bg-purple-dark fixed-top">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -601,7 +601,6 @@
       })
       const button = document.querySelector('#carouselButton')
       const [child] = button.children
-
       button.onclick = () => {
         if (child.classList.contains('fa-pause')) {
           carousel.pause()
