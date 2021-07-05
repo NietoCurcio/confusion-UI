@@ -4,14 +4,16 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "sass": "sass --watch sass:css"
+    "sass": "sass --watch sass:css",
+    "dev": "concurrently \"npm run sass\" \"npm run lite\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^6.2.0",
     "lite-server": "^2.3.0"
   },
   "dependencies": {
