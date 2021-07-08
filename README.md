@@ -2,9 +2,11 @@
 
 <img src="https://github.com/NietoCurcio/confusion-UI/blob/main/.github/showcase.png?raw=true" width="750" alt="RistoranteConfusion">
 
+> UI project website studied during the React specialization on Coursera.
+
 ## Front-End Web UI Frameworks and Tools: Bootstrap 4
 
-The Bootstrap course makes part of the Ful stack Web development with React on Coursera. It is focused on the [Presentation layer](https://en.wikipedia.org/wiki/Multitier_architecture) of the web development big picture, covering UI Desing making use of static files and libraries like Bootstrap, Sass, Less, Font Awesome, Grunt and Gulp for development a website. The [React course](https://github.com/NietoCurcio/SellerFinder), also covering the Presentation layer, cover the use of SPA (Single Page Applications) Frameworks to build a web application using Angular or React (at my case), whereas [NodeJs and MongoDB](https://github.com/NietoCurcio/Confusion-REST-API-Server) covers the Business Logic layer and Data Access layer of the Web development using Express, Mongoose, Firebase Backend as a Service, REST-API architecture, JWT and so on.
+The Bootstrap course makes part of the Ful stack Web development with React on Coursera. It is focused on the [Presentation layer](https://en.wikipedia.org/wiki/Multitier_architecture) of the web development big picture, covering implementation of UI Desing using static files and libraries like Bootstrap, Sass, Less, Font Awesome, Grunt and Gulp for development a website. The [React course](https://github.com/NietoCurcio/SellerFinder), also covering the Presentation layer, cover the use of SPA (Single Page Applications) Frameworks to build a web application using Angular or React (at my case), whereas [NodeJs and MongoDB](https://github.com/NietoCurcio/Confusion-REST-API-Server) covers the Business Logic layer and Data Access layer of the Web development using Express, Mongoose, Firebase Backend as a Service, REST-API architecture, JWT and so on.
 
 [Bootstrap](https://getbootstrap.com/) is a Front-end library to quickly design a website, using its buil-in classes and components.
 
