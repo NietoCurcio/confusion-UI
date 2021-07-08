@@ -34,4 +34,4 @@ Also, before using those libraries, we implement optimizations and minifications
 
 ## Honors recognition
 
-Check out my conclusion project, [PCArt]()
+Check out my conclusion project, [PCArt](https://github.com/NietoCurcio/PCArt)
