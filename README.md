@@ -28,7 +28,7 @@ A more coding approach making use of functions, to create tasks that we would li
 
 Both libraries support the use of plugins to enhance its functionality, like transpiling `scss` files to `css` for example. I personally prefer the Gulp approach.
 
-Also, before using those libraries, we implement optimizations and minifications of the static files using the usemin library. However, this project has used [htmlmin](), [terser]() and [cleancss]() libraries separately for those tasks, their tasks can be executed through the `npm run build` script that was set up.
+Also, before using those libraries, we implement optimizations and minifications of the static files using the usemin library. However, this project has used [htmlmin](https://github.com/voku/HtmlMin), [terser](https://github.com/terser/terser) and [cleancss](https://github.com/jakubpawlowicz/clean-css) libraries separately for those tasks. Their tasks can be executed through the `npm run build` script that was set up to build the `dist` folder.
 
 ## Honors recognition
 
