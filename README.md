@@ -16,13 +16,13 @@ It is shown on the course how use and get started with task runners to do common
 
 - [**Grunt**](https://gruntjs.com/)
 
-<img src="https://camo.githubusercontent.com/2bcb3bd09e6bd9b04773d1e1d5e7ef052a697ee9babe022d8859e3c817aaa6d3/687474703a2f2f6772756e746a732e636f6d2f696d672f6772756e742d6c6f676f2d6e6f2d776f72646d61726b2e737667" height="160" alt="Grunt">
+<img  src="https://camo.githubusercontent.com/2bcb3bd09e6bd9b04773d1e1d5e7ef052a697ee9babe022d8859e3c817aaa6d3/687474703a2f2f6772756e746a732e636f6d2f696d672f6772756e742d6c6f676f2d6e6f2d776f72646d61726b2e737667"  height="96"  alt="Grunt">
 
 A configurable approach by the use of objects `{}` declaring for example where are source files, destination and what options we'd like to use in our tasks.
 
 - [**Gulp**](https://gulpjs.com/)
 
-<img src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" height="160" alt="Gulp">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img  src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" height="120" alt="Gulp">
 
 > Have you seen this image somewhere else, haven't you?
 
